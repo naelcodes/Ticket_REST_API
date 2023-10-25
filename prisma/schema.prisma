@@ -1,0 +1,24 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [pgcrypto]
+}
+
+model Ticket {
+  id            String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  issuingDate   DateTime @db.Date
+  itinerary     String
+  currency      String   @db.VarChar(3)
+  amount        Decimal  @db.Decimal(65, 2)
+  passengerName String
+  airline       String
+  ticketNumber  String   @unique
+  type          String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

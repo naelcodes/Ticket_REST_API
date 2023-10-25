@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+    tickets-db:
+      image: postgres:15
+      ports:
+         - 5432:5432
+      container_name: tickets-db
+      env_file: .env
