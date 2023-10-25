@@ -14,7 +14,7 @@ Routes implemented :
 - **PATCH /tickets/:id** - Update information of a ticket record
 - **DELETE /tickets/:id** - deletes a single ticket record
 
-Note : The file aren't stored in the database. Informations related to each ticket are extracted and stored in the database. For ticket samples see folder */ticket-samples*
+Note : The files aren't stored in the database. Informations related to each ticket are extracted and stored in the database. For ticket samples see folder */ticket-samples*
 
 
 ## 1. Setup / Installation
