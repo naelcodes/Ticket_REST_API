@@ -7,9 +7,9 @@ A simple CRUD REST api used to manage tickets from travel agency built with Nest
 Routes implemented :
 
 - **POST /tickets** - Creates a ticket record
-- **POST /tickets/upload** - upload a single ticket file, and create the corresponding ticket record
-- **POST /tickets/upload/batch** - upload multiple ticket files and creates the corresponding ticket record for each file
-- **GET  /tickets** - Get all tickets stored in the database
+- **POST /tickets/upload** -  creates a ticket record from a ticket file
+- **POST /tickets/upload/batch** -  creates the corresponding ticket record for each ticket file upload in the batch
+- **GET  /tickets** - Get all ticket records stored in the database
 - **GET /tickets/:id** - Get a ticket record by its id
 - **PATCH /tickets/:id** - Update information of a ticket record
 - **DELETE /tickets/:id** - deletes a single ticket record
